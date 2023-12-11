@@ -1,0 +1,80 @@
+
+
+.todo-list {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 10px; 
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.label, select, textarea, input {
+    width: 100%; 
+    margin-bottom: 10px;
+}
+
+
+.input[type="submit"] {
+    width: auto;
+    padding: 10px; 
+    background-color: #007bff;
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+}
+
+
+.banner {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+
+.navbar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.logo {
+    width: 170px;
+    cursor: pointer;
+}
+
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #b58b49;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
