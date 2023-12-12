@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/frontend/assets/css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="/frontend/assets/images/Stay+Golden+Organizing+_+LOGOS.png" class="logo">
+            <ul>
+                <li>
+                    <a href="/frontend/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/frontend/newToDo.html">Create ToDo</a>
+                </li>
+                <li>
+                    <a href="/frontend/todos.html">View ToDos by User</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to Stay Golden Organizing</h1>
+        <p>This website allows you to keep track of your tasks and stay organized. You can view and manage your ToDos
+            efficiently.</p>
+        <img src="/frontend/assets/images/organize.png" alt="Stay Organized">
+    </div>
+    <div>
+        <select id="mainDropdown">
+            <option></option>
+        </select>
+        <button id="viewTask">View Task</button>
+        <ul id="displayTodo"></ul>
+    </div>
+    <script src="todos.js"></script>
+</html>
